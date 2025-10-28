@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namaste Dev | Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: white;
+    }
+    header {
+      background-color: #ff9800;
+      color: black;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    .container {
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+    label, select, input {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      background-color: #ff9800;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #ffa726;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Namaste Dev</h1>
+    <nav>
+      <a href="home.html">Home</a> |
+      <a href="courses.html">Courses</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Enroll Now</h2>
+    <p>Fill out this form to register your interest in our courses.</p>
+
+    <form id="enrollForm" action="#" method="post">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="course">Interested Course</label>
+      <select id="course" name="course" required>
+        <option value="">-- Select a Course --</option>
+        <option value="namaste-js">Namaste JavaScript</option>
+        <option value="namaste-node">Namaste Node.js</option>
+        <option value="namaste-dsa">Namaste DSA</option>
+        <option value="frontend-system-design">Frontend System Design</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Example placeholder for CRM tracking script -->
+  <!-- <script src="https://YOURDOMAIN.freshsales.io/js/web_tracking.js"></script> -->
+</body>
+</html>
