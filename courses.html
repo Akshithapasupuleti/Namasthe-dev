@@ -108,6 +108,36 @@ chat='true'>
       <p>Learn scalable design for frontend systems.</p>
       <button>Enroll Now</button>
     </div>
+    
   </div>
+
+
+  <script>
+    // Wait until page fully loads
+    document.addEventListener("DOMContentLoaded", function() {
+      // Get all Enroll buttons
+      const enrollButtons = document.querySelectorAll(".course-card button");
+
+      // Add click event for each button
+      enrollButtons.forEach(button => {
+        button.addEventListener("click", function() {
+          const courseName = this.parentElement.querySelector("h3").textContent;
+
+          // Track custom event in Freshsales CRM
+          FM.trackCustomEvent("Enroll Button Clicked", {
+            "course_name": courseName,
+            "clicked_at": new Date().toISOString()
+          });
+
+          console.log("Tracked event for:", courseName);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+  
 </body>
 </html>
