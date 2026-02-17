@@ -13,29 +13,6 @@ chat='true'>
 
 
 
-  <button onclick="identifyUser()">Identify User</button>
-
-<script>
-function identifyUser() {
-
-    var new_contact = {
-        "First name": "Test",
-        "Last name": "User",
-        "Email": "testuser123@example.com",
-        "Mobile": "9876543210",
-        "company": {
-            "Name": "Demo Company",
-            "Website": "https://demo.com"
-        }
-    };
-
-    var identifier = new_contact.Email;
-
-    fwcrm.identify(identifier, new_contact);
-
-    alert("User Identified Successfully");
-}
-</script>
 
 
   
